@@ -32,7 +32,7 @@ exports.handler = async function(context, event, callback) {
   */
     
 
-  switch(event.location){
+  switch(event.location || event.Location){
     case 'GetCustomerDetailsByCustomerId':
     
       let customer = await fetchCustomerById(hubspotClient,body.CustomerId);
