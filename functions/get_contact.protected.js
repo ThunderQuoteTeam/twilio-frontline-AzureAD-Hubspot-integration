@@ -13,8 +13,14 @@ exports.handler = async function(context, event, callback) {
   
   
   const body = event;
+  /**
+  *  Token Check Function for v1 callbacks. Does not work for v2
+  *  https://www.twilio.com/docs/frontline/callback-versions
+  *  If using v1, be sure to rename get_contact.protected.js to get_contact.js
+  *
+  **/
   
-  //Token Check Function
+  /*
   let ok = await tokenCheck(body.Token, REALM_SID, ACCOUNT_SID, AUTH_TOKEN);
   
   if(!ok){
@@ -23,6 +29,7 @@ exports.handler = async function(context, event, callback) {
     return callback(null, rsp);
 
   }
+  */
     
 
   switch(event.location){
