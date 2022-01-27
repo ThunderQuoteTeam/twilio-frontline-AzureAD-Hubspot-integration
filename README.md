@@ -134,3 +134,7 @@ Props to the Twilio Support Team for helping to answer questions and issues enco
 Have any questions or need help to do any custom implementations?
 Feel free to drop us an email at hello@thunderquote.com.
 
+
+## Changelog
+2022-01-28 
+Updated to use latest version (v2) of the Twilio Frontline Callbacks (https://www.twilio.com/docs/frontline/callback-versions) Note that this version of the code is NOT compatible with v1 
